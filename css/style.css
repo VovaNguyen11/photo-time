@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Light.otf');
+    src: url('../fonts/GothamRoundedLight_21020.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Book.otf');
+    src: url('../fonts/GothamRoundedBook_21018.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('../fonts/GothamRounded-Medium.otf');
+    src: url('../fonts/GothamRoundedMedium_21022.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url(../fonts/GothamRounded-Bold.otf);
+    src: url(../fonts/GothamRoundedBold_21016.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-reset {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 45px;
+    background-color: #16a085;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    letter-spacing: 1.8px;
+}
+
+body {
+    font-family: 'Gotham Rounded';
+    font-size: 1rem;
+}
+
+
+header {
+    padding: 40px 0;
+    background: url('../images/bg_header.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+header .container--nav {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header .topnav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .topnav li {
+    margin-right: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    font-size: 1rem;
+}
+
+header .topnav li:nth-child(3){
+    margin: 0 85px 0 15px;
+}
+
+header .topnav li:last-child {
+    margin-right: 0;
+}
+
+header .topnav .logo {
+    box-sizing: border-box;
+    display: inline-block;
+    background: url('../images/logo.png') no-repeat center 0px;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-body {
+    width: 55%;
+    margin: 0 auto
+}
+
+.hero-body .hero-title {
+    letter-spacing: 5.4px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-size: 2.25rem;
+}
+
+.hero-text {
+    letter-spacing: 2.4px;
+    text-transform: lowercase;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.hero .button {
+    padding: 19px 30px;
+}
+
+.social-bar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social-bar li {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-bar li:last-child {
+    margin-right: 0;
+}
