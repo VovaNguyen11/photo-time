@@ -30,6 +30,10 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .list-reset {
     list-style: none;
     padding: 0;
@@ -43,12 +47,18 @@
 
 .button {
     display: inline-block;
-    padding: 20px 45px;
+    padding: 18px 45px;
     background-color: #16a085;
     text-transform: uppercase;
     font-size: 0.75rem;
     border-radius: 3px;
     letter-spacing: 1.8px;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 body {
@@ -56,9 +66,9 @@ body {
     font-size: 1rem;
 }
 
-
 header {
-    padding: 40px 0;
+    width: 100%;
+    padding: 20px 0;
     background: url('../images/bg_header.jpg') no-repeat;
     background-size: cover;
     color: #fff;
@@ -66,49 +76,49 @@ header {
 
 header .container--nav {
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 190px;
+    padding: 35px 0;
 }
 
 header .topnav ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header .topnav li {
-    margin-right: 65px;
+    /* margin: 0 35px; */
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2.4px;
     font-size: 1rem;
+    flex: none;
 }
 
-header .topnav li:nth-child(3){
-    margin: 0 85px 0 15px;
-}
-
-header .topnav li:last-child {
-    margin-right: 0;
+header .topnav li:nth-child(3) {
+    margin: 0 40px;
 }
 
 header .topnav .logo {
     box-sizing: border-box;
     display: inline-block;
-    background: url('../images/logo.png') no-repeat center 0px;
+    background: url('../images/logo.png') no-repeat center center;
     background-size: contain;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 53px;
+    transform: translateY(-10px);
 }
 
 .hero {
     width: 100%;
     text-align: center;
-    padding: 200px 0;
+    margin-bottom: 220px;
 }
 
 .hero-body {
     width: 55%;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .hero-body .hero-title {
@@ -142,3 +152,148 @@ header .topnav .logo {
 .social-bar li:last-child {
     margin-right: 0;
 }
+
+.about {
+    background: url(../images/bg_about.jpg) no-repeat;
+    background-size: cover;
+    padding: 110px 0 90px;
+}
+
+.about-body {
+    max-width: calc(100% - 576px);
+}
+
+.about-title {
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    font-size: 1.125rem;
+    color: #16a085;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.about-text {
+    font-size: 0.75rem;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    line-height: 1.5rem;
+    margin: 0 0 45px 0;
+}
+
+.about-text b {
+    font-weight: bold;
+}
+
+.design {
+    background: url(../images/bg_design.jpg) no-repeat;
+    background-size: cover;
+    padding: 145px 0 80px;
+}
+
+
+.design-body {
+    margin-left: 62%;
+    max-width: calc(100% - 576px);
+}
+
+.design-title {
+    font-weight: bold;
+    margin: 0 0 33px 0;
+    font-size: 1.125rem;
+    color: #16a085;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.design-text {
+    font-size: 0.75rem;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    line-height: 22px;
+    margin: 0 0 35px 0;
+}
+
+.design-text b {
+    font-weight: bold;
+}
+
+.design .button {
+    margin-bottom: 40px;
+}
+
+.design .date {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    line-height: 1.5rem;
+}
+
+.design .date-nav {
+    font-size: 1.75rem;
+}
+
+.design .date-nav.angle-left {
+    content: url('../images/icon_angle-left.png');
+    margin-right: 15px;
+}
+
+.design .date-nav.angle-right {
+    content: url('../images/icon_angle-right.png');
+}
+
+.community{
+    background-color: #f5f6f7;
+    padding: 120px 0;
+}
+
+.community>.container {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+}
+
+.community-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:0 0 18%;
+    margin-right: 70px;
+}
+
+.community-logo{
+    margin: 5px 0 25px;
+}
+
+.community-title{
+    color: #373737;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    line-height: 1.25;
+    margin: 0 0 20px 0;
+}
+
+.community-text{
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 0 18px;
+    line-height: 1.25;
+}
+
+.community-images{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.community-images img{
+    margin-right: 24px;
+}
+
+.community .community-images img:last-child{
+    margin-right: 0;
+}
+
+
