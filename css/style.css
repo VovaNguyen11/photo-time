@@ -1,13 +1,5 @@
 @font-face {
     font-family: 'Gotham Rounded';
-    src: url('../fonts/GothamRounded-Light.otf');
-    src: url('../fonts/GothamRoundedLight_21020.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Rounded';
     src: url('../fonts/GothamRounded-Book.otf');
     src: url('../fonts/GothamRoundedBook_21018.ttf') format('truetype');
     font-weight: normal;
@@ -34,13 +26,13 @@
     box-sizing: border-box;
 }
 
-.list-reset {
+.nav__list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.link-reset {
+.nav__link {
     text-decoration: none;
     color: inherit;
 }
@@ -54,6 +46,7 @@
     border-radius: 3px;
     letter-spacing: 1.8px;
     color: white;
+    text-decoration: none;
 }
 
 .container {
@@ -80,20 +73,20 @@ header {
     color: #fff;
 }
 
-header .container--nav {
+.nav {
     width: 60%;
     margin: 0 auto 190px;
     padding: 35px 0;
 }
 
-header .topnav ul {
+.nav__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .topnav li {
+.nav__item {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2.4px;
@@ -101,12 +94,8 @@ header .topnav li {
     flex: none;
 }
 
-header .topnav li:nth-child(3) {
+.nav__link--logo {
     margin: 0 40px;
-}
-
-header .topnav .logo {
-    box-sizing: border-box;
     display: inline-block;
     background: url('../images/logo.png') no-repeat center center;
     background-size: contain;
@@ -126,34 +115,33 @@ header .topnav .logo {
     margin: 0 auto;
 }
 
-.hero-body .hero-title {
+.hero__title {
     letter-spacing: 5.4px;
     margin-bottom: 7px;
     font-size: 2.25rem;
 }
 
-.hero-text {
+.hero__text {
     letter-spacing: 2.4px;
     text-transform: lowercase;
     font-size: 1rem;
     margin-bottom: 25px;
 }
 
-.hero .button {
+.button--large {
     padding: 19px 30px;
 }
 
-.social-bar ul {
-    display: flex;
+.nav__list--centered {
     justify-content: center;
 }
 
-.social-bar li {
+.fab {
     margin-right: 1rem;
     font-size: 1.5rem;
 }
 
-.social-bar li:last-child {
+.fab:last-child {
     margin-right: 0;
 }
 
@@ -191,7 +179,6 @@ header .topnav .logo {
     background-size: cover;
     padding: 145px 0 80px;
 }
-
 
 .design-body {
     margin-left: 62%;
@@ -419,13 +406,11 @@ header .topnav .logo {
 }
 
 .footer>.container {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
-.footer-body{
+.footer-body {
     display: flex;
     align-content: flex-start;
     flex-flow: wrap row;
@@ -448,10 +433,11 @@ header .topnav .logo {
     letter-spacing: 2.1px;
 }
 
-.footnav li{
+.footnav li {
     display: flex;
     align-items: center;
 }
+
 .footnav li::after {
     content: '|';
     color: #16a085;
